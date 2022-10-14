@@ -1,0 +1,17 @@
+version: '3'
+services:
+#The Application
+
+    dlchords-server:
+        image: public.ecr.aws/o7i3q3m3/dl-chords-server:latest
+        container_name: dlchords-server
+        command: "python app.py"
+        ports:
+            - 80:4000
+        logging:
+            driver: awslogs
+            options: 
+                awslogs-group: dlchords_ec2
+                awslogs-region: us-east-2
+                awslogs-stream-prefix: web
+    
