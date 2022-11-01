@@ -1,0 +1,12 @@
+version: '3'
+services:
+#The Application
+
+    dlchords-server:
+        build:
+          context: ./src
+          dockerfile: Dockerfile
+        command: "python app.py"
+        ports:
+            - 80:4000
+  
