@@ -1,3 +1,5 @@
+'Parte de este código es tomado de Valerio Velardo'
+
 import json
 import librosa
 import madmom
