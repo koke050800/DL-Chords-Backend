@@ -1,3 +1,5 @@
+'Parte de este código es Franck Ngamkan'
+
 import json
 import os
 import shutil
